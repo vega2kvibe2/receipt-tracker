@@ -1,0 +1,196 @@
+- generic [ref=e3]:
+  - generic:
+    - img
+  - generic [ref=e4]:
+    - generic [ref=e8]:
+      - heading "Receipt Expense Tracker API 1.0.0 OAS 3.1" [level=1] [ref=e9]:
+        - text: Receipt Expense Tracker API
+        - generic [ref=e10]:
+          - generic [ref=e12]: 1.0.0
+          - generic [ref=e14]: OAS 3.1
+      - link "/openapi.json" [ref=e15] [cursor=pointer]:
+        - /url: /openapi.json
+        - generic [ref=e16]: /openapi.json
+    - generic [ref=e19]:
+      - generic [ref=e21]:
+        - heading "default Collapse operation" [level=3] [ref=e22] [cursor=pointer]:
+          - link "default" [ref=e23]:
+            - /url: "#/default"
+          - button "Collapse operation" [expanded] [ref=e24]:
+            - img [ref=e25]
+        - generic [ref=e28]:
+          - generic [ref=e31] [cursor=pointer]:
+            - button "POST /api/upload Upload Receipt" [ref=e32]:
+              - generic [ref=e33]: POST
+              - generic [ref=e34]:
+                - link "/api/upload" [ref=e36]:
+                  - /url: "#/default/upload_receipt_api_upload_post"
+                  - generic [ref=e37]:
+                    - text: /api
+                    - text: /upload
+                - generic [ref=e38]: Upload Receipt
+            - generic "Copy to clipboard"
+            - button "post /api/upload" [ref=e41]:
+              - img [ref=e42]
+          - generic [ref=e46] [cursor=pointer]:
+            - button "GET /api/expenses Get Expenses" [ref=e47]:
+              - generic [ref=e48]: GET
+              - generic [ref=e49]:
+                - link "/api/expenses" [ref=e51]:
+                  - /url: "#/default/get_expenses_api_expenses_get"
+                  - generic [ref=e52]:
+                    - text: /api
+                    - text: /expenses
+                - generic [ref=e53]: Get Expenses
+            - generic "Copy to clipboard"
+            - button "get /api/expenses" [ref=e56]:
+              - img [ref=e57]
+          - generic [ref=e61] [cursor=pointer]:
+            - 'button "DELETE /api/expenses/{expense_id} Delete Expense" [ref=e62]':
+              - generic [ref=e63]: DELETE
+              - generic [ref=e64]:
+                - 'link "/api/expenses/{expense_id}" [ref=e66]':
+                  - /url: "#/default/delete_expense_api_expenses__expense_id__delete"
+                  - generic [ref=e67]:
+                    - text: /api
+                    - text: /expenses
+                    - text: "/{expense_id}"
+                - generic [ref=e68]: Delete Expense
+            - generic "Copy to clipboard"
+            - 'button "delete /api/expenses/{expense_id}" [ref=e71]':
+              - img [ref=e72]
+          - generic [ref=e76] [cursor=pointer]:
+            - 'button "PUT /api/expenses/{expense_id} Update Expense" [ref=e77]':
+              - generic [ref=e78]: PUT
+              - generic [ref=e79]:
+                - 'link "/api/expenses/{expense_id}" [ref=e81]':
+                  - /url: "#/default/update_expense_api_expenses__expense_id__put"
+                  - generic [ref=e82]:
+                    - text: /api
+                    - text: /expenses
+                    - text: "/{expense_id}"
+                - generic [ref=e83]: Update Expense
+            - generic "Copy to clipboard"
+            - 'button "put /api/expenses/{expense_id}" [ref=e86]':
+              - img [ref=e87]
+          - generic [ref=e91] [cursor=pointer]:
+            - button "GET /api/summary Get Summary" [ref=e92]:
+              - generic [ref=e93]: GET
+              - generic [ref=e94]:
+                - link "/api/summary" [ref=e96]:
+                  - /url: "#/default/get_summary_api_summary_get"
+                  - generic [ref=e97]:
+                    - text: /api
+                    - text: /summary
+                - generic [ref=e98]: Get Summary
+            - generic "Copy to clipboard"
+            - button "get /api/summary" [ref=e101]:
+              - img [ref=e102]
+      - generic [ref=e105]:
+        - heading "health Collapse operation" [level=3] [ref=e106] [cursor=pointer]:
+          - link "health" [ref=e107]:
+            - /url: "#/health"
+          - button "Collapse operation" [expanded] [ref=e108]:
+            - img [ref=e109]
+        - generic [ref=e114]:
+          - generic [ref=e115] [cursor=pointer]:
+            - button "GET /health Health Check" [expanded] [ref=e116]:
+              - generic [ref=e117]: GET
+              - generic [ref=e118]:
+                - link "/health" [ref=e120]:
+                  - /url: "#/health/health_check_health_get"
+                - generic [ref=e121]: Health Check
+            - generic "Copy to clipboard"
+            - button "get /health" [expanded] [ref=e124]:
+              - img [ref=e158]
+          - generic [ref=e161]:
+            - generic [ref=e162]:
+              - generic [ref=e163]:
+                - heading "Parameters" [level=4] [ref=e166] [cursor=pointer]
+                - button "Cancel" [ref=e207] [cursor=pointer]
+              - paragraph [ref=e171]: No parameters
+            - generic [ref=e172]:
+              - button "Execute" [ref=e208] [cursor=pointer]
+              - button "Clear" [ref=e209] [cursor=pointer]
+            - generic [ref=e173]:
+              - heading "Responses" [level=4] [ref=e175]
+              - generic [ref=e176]:
+                - generic [ref=e210]:
+                  - generic [ref=e211]:
+                    - generic [ref=e212]:
+                      - heading "Curl" [level=4] [ref=e213]
+                      - button [ref=e215] [cursor=pointer]
+                      - code [ref=e218]: "curl -X 'GET' \\ 'http://localhost:8000/health' \\ -H 'accept: application/json'"
+                    - generic [ref=e220]:
+                      - heading "Request URL" [level=4] [ref=e221]
+                      - generic [ref=e222]: http://localhost:8000/health
+                    - heading "Server response" [level=4] [ref=e223]
+                    - table [ref=e224]:
+                      - rowgroup [ref=e225]:
+                        - row "Code Details" [ref=e226]:
+                          - cell "Code" [ref=e227]
+                          - cell "Details" [ref=e228]
+                      - rowgroup [ref=e229]:
+                        - 'row "200 Response body Download { \"status\": \"ok\", \"message\": \"Receipt Tracker API is running\" } Response headers content-length: 58 content-type: application/json date: Mon,11 May 2026 07:07:39 GMT server: uvicorn" [ref=e230]':
+                          - cell "200" [ref=e231]
+                          - 'cell "Response body Download { \"status\": \"ok\", \"message\": \"Receipt Tracker API is running\" } Response headers content-length: 58 content-type: application/json date: Mon,11 May 2026 07:07:39 GMT server: uvicorn" [ref=e232]':
+                            - generic [ref=e233]:
+                              - heading "Response body" [level=5] [ref=e234]
+                              - generic [ref=e235]:
+                                - button [ref=e237] [cursor=pointer]
+                                - button "Download" [ref=e238] [cursor=pointer]
+                                - code [ref=e240]: "{ \"status\": \"ok\", \"message\": \"Receipt Tracker API is running\" }"
+                            - generic [ref=e241]:
+                              - heading "Response headers" [level=5] [ref=e242]
+                              - generic [ref=e243]:
+                                - generic [ref=e244]: "content-length: 58"
+                                - generic [ref=e245]: "content-type: application/json"
+                                - generic [ref=e246]: "date: Mon,11 May 2026 07:07:39 GMT"
+                                - generic [ref=e247]: "server: uvicorn"
+                  - heading "Responses" [level=4] [ref=e248]
+                - region [ref=e177]:
+                  - rowgroup [ref=e178]:
+                    - row "Code Description Links" [ref=e179]:
+                      - cell "Code" [ref=e180]
+                      - cell "Description" [ref=e181]
+                      - cell "Links" [ref=e182]
+                  - rowgroup [ref=e183]:
+                    - row "200 Successful Response Media type application/json Controls Accept header. Example Value No links" [ref=e184]:
+                      - cell "200" [ref=e185]
+                      - cell "Successful Response Media type application/json Controls Accept header. Example Value" [ref=e186]:
+                        - paragraph [ref=e189]: Successful Response
+                        - generic [ref=e191]:
+                          - generic [ref=e192]: Media type
+                          - combobox "Media Type" [ref=e194]:
+                            - option "application/json" [selected]
+                          - generic [ref=e195]:
+                            - text: Controls
+                            - code [ref=e196]: Accept
+                            - text: header.
+                        - generic [ref=e197]:
+                          - tablist [ref=e198]:
+                            - tab "Example Value" [selected] [ref=e199] [cursor=pointer]
+                            - tab "Schema" [ref=e200] [cursor=pointer]
+                          - tabpanel "Example Value" [ref=e201]:
+                            - code [ref=e205]: "\"string\""
+                      - cell "No links" [ref=e206]
+    - generic [ref=e129]:
+      - heading "Schemas" [level=4] [ref=e130] [cursor=pointer]:
+        - button "Schemas" [expanded] [ref=e131]:
+          - generic [ref=e132]: Schemas
+          - img [ref=e133]
+      - generic [ref=e135]:
+        - article [ref=e136]:
+          - generic [ref=e137]:
+            - button "HTTPValidationError" [ref=e138] [cursor=pointer]:
+              - generic [ref=e140]: HTTPValidationError
+              - img [ref=e142]
+            - button "Expand all" [ref=e144] [cursor=pointer]
+            - strong [ref=e145]: object
+        - article [ref=e146]:
+          - generic [ref=e147]:
+            - button "ValidationError" [ref=e148] [cursor=pointer]:
+              - generic [ref=e150]: ValidationError
+              - img [ref=e152]
+            - button "Expand all" [ref=e154] [cursor=pointer]
+            - strong [ref=e155]: object

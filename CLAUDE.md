@@ -72,7 +72,7 @@ receipt-tracker/
 ## API 엔드포인트
 
 | 메서드 | 경로 | 설명 |
-|--------|------|----- |
+|--------|------|------|
 | POST | `/api/upload` | `multipart/form-data` 파일 수신 → OCR 파싱 → JSON 반환 (저장은 별도) |
 | GET | `/api/expenses` | 전체 지출 조회; `?from=YYYY-MM-DD&to=YYYY-MM-DD` 날짜 필터 |
 | DELETE | `/api/expenses/{id}` | UUID로 항목 삭제; 없으면 404 |
