@@ -1,0 +1,10 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.3
+python-multipart==0.0.20
+langchain==1.2.18
+langchain-upstage==0.7.7
+langchain-core>=0.3.0
+pillow==12.2.0
+pdf2image==1.17.0
+requests==2.33.1
+python-dotenv==1.2.2

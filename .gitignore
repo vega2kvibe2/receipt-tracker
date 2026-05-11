@@ -1,0 +1,45 @@
+# 환경변수 및 시크릿
+.env
+.env.local
+.env.production
+
+# MCP 설정 (로컬 전용)
+.mcp.json
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.python-version
+
+# 데이터 (로컬 전용)
+backend/data/expenses.json
+backend/uploads/
+
+# Node / 프론트엔드
+node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.production
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code 로컬 설정
+.claude/
+
+# 테스트 이미지 (용량 큰 바이너리)
+images/
